@@ -1,0 +1,26 @@
+<!DOCTYPE html >
+
+<html lang="en">
+
+    <head>
+        <title>Hello GO</title>
+    </head>
+
+    <body>
+
+    <ul>
+        {{ range  .}}
+        <li> <h1>Hello {{.}}</h1> </li>
+        {{end}}
+    </ul>
+
+    <h1>Or</h1>
+
+    <ul>
+        {{ range  $index, $name := .}}
+        <li> <h1>Hello {{ $index }} - {{ $name }}</h1> </li>
+        {{end}}
+    </ul>
+
+    </body>
+</html>

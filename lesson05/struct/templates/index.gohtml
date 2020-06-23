@@ -1,0 +1,30 @@
+<!DOCTYPE html >
+
+<html lang="en">
+
+    <head>
+        <title>Hello GO</title>
+    </head>
+
+    <body>
+
+
+    <h1>YOUR DATA:</h1>
+    <ul>
+ 
+        <li> {{.Name}}  {{.Age}} </li>
+  
+    </ul>
+
+    <h1>Or</h1>
+
+    <h1>YOUR DATA:</h1>
+    <ul>
+        {{ $v1 := .Name }}
+        {{ $v2 := .Age }}
+        <li> {{$v1}}  {{$v2}} </li>
+
+    </ul>
+
+    </body>
+</html>

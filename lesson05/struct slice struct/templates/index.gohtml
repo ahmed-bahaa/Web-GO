@@ -1,0 +1,27 @@
+<!DOCTYPE html >
+
+<html lang="en">
+
+    <head>
+        <title>Hello GO</title>
+    </head>
+
+    <body>
+
+
+    <h1>YOUR person:</h1>
+    <ul>
+        {{range .Persons }}
+        <li> {{.Name}}  {{.Age}} </li>
+        {{end }}
+    </ul>
+
+    <h1>YOUR animal:</h1>
+    <ul>
+        {{range .Animals }}
+        <li> {{.Name}}  {{.Kindd}} </li>
+        {{end }}
+    </ul>
+
+    </body>
+</html>
